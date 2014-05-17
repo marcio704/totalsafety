@@ -89,6 +89,10 @@
     border-bottom: 1px solid #eee;
 }
 
+#top_shadow_image {
+    width: 100%;
+}
+
 #loginLock{
     color: #1E2681;
 }

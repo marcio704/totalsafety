@@ -66,7 +66,7 @@
 <div id="shadowRow">
     <c:url value="/resources/images/top_shadow_resized.png" var="imageUrl"/>
     <div class="row-fluid top_shadow">
-        <img class="img-responsive" src="${imageUrl}">
+        <img id ="top_shadow_image" class="img-responsive" src="${imageUrl}">
     </div>
 </div>
 
