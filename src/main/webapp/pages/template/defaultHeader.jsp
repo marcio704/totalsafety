@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="<c:url value="/"/>">
+            <a class="navbar-brand" style="z-index: 2" href="<c:url value="/"/>">
                 <img id="logo" src="<c:url value='/resources/images/logo.png' />" alt="<spring:message code="company.name"/>" />
             </a>
             <spam class="navbar-brand">
@@ -62,7 +62,7 @@
                 </li>
                 <li>
                     <!-- Google Custom Search -->
-                    <div style="margin-top: 13px; margin-left: 20px;">
+                    <div style="margin-top: 13px; margin-left: 30px;">
                         <div class="row" style="margin-top: 5px;">
                             <c:url value="/search" var="url"/>
                             <form method="get" id="searchform" id="searchbox_008295403780974825624:tj11nvaon2k" action="${url}">

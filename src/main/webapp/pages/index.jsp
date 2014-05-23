@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core"          prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags"        prefix="spring"%>
 
-<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide container slider_shadow slider_border">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <c:forEach items="${home.images}" var="image" varStatus="imageNumber">
@@ -55,22 +55,22 @@
     </div>
 
     <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <a class="left carousel-control slider_border" href="#myCarousel" data-slide="prev">
         <span class="icon-prev"></span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <a class="right carousel-control slider_border" href="#myCarousel" data-slide="next">
         <span class="icon-next"></span>
     </a>
 </div>
 
-<div id="shadowRow">
+<!--<div id="shadowRow" class="container">
     <c:url value="/resources/images/top_shadow_resized.png" var="imageUrl"/>
-    <div class="row-fluid top_shadow">
+    <div class="row top_shadow">
         <img id ="top_shadow_image" class="img-responsive" src="${imageUrl}">
     </div>
-</div>
+</div>-->
 
-<div class="container" style="margin-top: -60px;" >
+<div class="container" style="margin-top: 30px;" >
     <c:if test="${home.warn != null && !home.warn.isEmpty()}">
         <br />
         <c:url value="/resources/images/warning_background.jpg" var="imageUrl"/>
