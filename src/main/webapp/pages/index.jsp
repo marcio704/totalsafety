@@ -74,7 +74,7 @@
     <c:if test="${home.warn != null && !home.warn.isEmpty()}">
         <br />
         <c:url value="/resources/images/warning_background.jpg" var="imageUrl"/>
-        <div class="row" style="background-image: url(${imageUrl});">
+        <div class="row tsImg" style="background-image: url(${imageUrl});">
             <div id="divWarn" style="display: none;">
                 <center>
                     <div class="col-md-3"></div>
@@ -82,7 +82,7 @@
                         <div class="row">
                             <c:if test="${home.warnImage != null && !home.warnImage.isEmpty()}">
                                 <div class="col-md-7">
-                                    <img class="img-responsive tsImg" src="${home.warnImage}">
+                                    <img class="img-responsive slider_border" src="${home.warnImage}">
                                 </div>
                             </c:if>
                             <div class="col-md-${home.warnImage != null && !home.warnImage.isEmpty() ? 5 : 12}">
