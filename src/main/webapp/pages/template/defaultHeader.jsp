@@ -4,7 +4,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <button id="btnMenuHeader" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -19,8 +19,8 @@
             </spam>
         </div>
 
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-right">
+        <div class="collapse navbar-collapse navbar-ex1-collapse" id="headerCollapsedMenu">
+            <ul class="nav navbar-nav navbar-right" style="margin-left: 5px;">
                 <li>
                     <a href="<c:url value="/about"/>"><spring:message code="company.about"/></a>
                 </li>

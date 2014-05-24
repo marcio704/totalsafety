@@ -41,3 +41,15 @@
         <tiles:insertAttribute name="footer" />
     </body>
 </html>
+
+<script text="javascript">
+    var menuArea = "navbar-fixed-top, .navbar-fixed-top";
+    jQuery(document).on("click", function(event) {
+        var isClosingClick = !jQuery(event.target).closest(".navbar-fixed-top").length;
+        if(isClosingClick) {
+            if($('#headerCollapsedMenu').is(":visible")) {
+                jQuery("#btnMenuHeader").click();
+            }
+        }
+    });
+</script>

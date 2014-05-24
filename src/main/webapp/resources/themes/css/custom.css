@@ -157,9 +157,9 @@ x.navbar-inverse{
 }
 
 #searchform #searchsubmit{
-    position: absolute;
-    top: 10px;
-    right: -13px;
+    position: relative;
+    top: 1px;
+    right: 28px;
     width: 20px;
     height: 25px;
     border: 0px;
@@ -321,6 +321,69 @@ ul#loadbar li:first-child { margin-left: 0 }
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
+        display: block!important;
     }
     .navbar-collapse.collapse.in { display: block!important; margin-top: 15px;}
+
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+    .navbar-nav > li > .dropdown-menu {
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .dropdown-menu, .btn-primary {
+        background-color: #1E2681;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #999;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #f5f5f5;
+    }
+    .navbar-nav .open .dropdown-menu > li > a {
+        line-height: 20px;
+    }
+    .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+        padding: 5px 15px 5px 25px;
+    }
+    .navbar-nav .open .dropdown-menu > li > a {
+        line-height: 20px;
+    }
+    .navbar-nav .open .dropdown-menu > li > a {
+        line-height: 20px;
+    }
+    .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+        padding: 5px 15px 5px 25px;
+    }
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+        background-color: #f5f5f5;
+    }
+    .dropdown-menu > li > a, .dropdown-menu > li > a:active, .dropdown-menu > li > a:hover {
+        color: #ffffff;
+    }
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+        color: #f5f5f5;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .dropdown-menu > li > a, .dropdown-menu > li > a:active, .dropdown-menu > li > a:hover {
+        color: #ffffff;
+    }
+    .dropdown-menu > li > a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.428571429;
+        color: #333;
+        white-space: nowrap;
+    }
 }
