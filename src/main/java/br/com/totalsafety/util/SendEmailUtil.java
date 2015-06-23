@@ -11,8 +11,8 @@ import javax.mail.internet.MimeMessage;
 
 public class SendEmailUtil {
 
-    private static final String MAIL_FROM = "total.safety.adm@gmail.com";
-    private static final String PASSWORD = "mgderune2k";
+    private static final String MAIL_FROM = "xxxxxx@gmail.com";
+    private static final String PASSWORD = "xxxxxxxxxx";
 
     public static void sendEmail(String subject, String text, String mailTo) {
         Properties props = new Properties();
